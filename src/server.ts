@@ -4,7 +4,7 @@ import app from './app';
 
 import logger from '@logger/';
 
-app.listen(3000, () => {
-  logger.info('🚀 Server started on port 3000');
+app.listen(process.env.APP_PORT, () => {
+  logger.info(`🚀 Server started on port ${process.env.APP_PORT}`);
 });
 
