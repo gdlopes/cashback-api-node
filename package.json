@@ -5,7 +5,7 @@
   "author": "Gustavo Lopes <gustavodomlopes@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel ormconfig.ts src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "start": "NODE_ENV=production node dist/server.js",
     "dev": "NODE_ENV=development ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts | pino-pretty -c",
     "test": "NODE_ENV=development jest --silent",
